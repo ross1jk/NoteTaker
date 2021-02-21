@@ -6,7 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 require('./routes/apiRoutes')(app);
-// require('./routes/htmlRoutes')(app); 
+require('./routes/htmlRoutes')(app); 
 
 // Starting my server
 app.listen(PORT, () => {
