@@ -1,3 +1,4 @@
+
 const notes = require('../db/db.json');
 const fs = require('fs');
 const { finished } = require('stream');
@@ -29,7 +30,7 @@ module.exports = (app) => {
     let postDelete = JSON.stringify(notes, null, 2)
 
     fs.writeFile('./db/db.json', postDelete, (err) =>
-    err ? console.log(err) : console.log("Note Successfullly Deleted"));
+    err ? console.log(err) : console.log("Note Successfully Deleted"));
     res.end();
   });
 
