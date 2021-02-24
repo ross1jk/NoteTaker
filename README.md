@@ -17,7 +17,7 @@ This application, Note Taker can be used to write and save notes using Express.j
   
 ## Deployed_Application
 
-To access this deployed application, visit the following link: [Note Taker]()
+To access this deployed application, visit the following link: [Note Taker](https://fathomless-journey-03162.herokuapp.com/)
 
 ## Usage
 
