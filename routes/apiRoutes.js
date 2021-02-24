@@ -1,4 +1,3 @@
-//API routes 
 const notes = require('../db/db.json');
 const fs = require('fs');
 const { finished } = require('stream');
@@ -9,7 +8,6 @@ module.exports = (app) => {
   app.get('/api/notes', (req, res) => res.json(notes));
 
   app.post('/api/notes', (req, res) => {
-    // unique id
     req.id = shortid.generate();
     const newNote = {
       title: req.body.title,
@@ -25,10 +23,7 @@ module.exports = (app) => {
     res.end();
   });
 
-  // Delete Note   
-
   app.delete("/api/notes/:id", (req, res) => {
-    // let noteList = require("./db.json");
     let deleteId = req.params.id;
     notes.splice(deleteId, 1);
     let postDelete = JSON.stringify(notes, null, 2)
