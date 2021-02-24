@@ -1,31 +1,17 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "This is Note",
+    "text": "Look how it works",
+    "id": "RmDNgk4lF"
   },
   {
-    "title": "Test",
-    "text": "THREE"
+    "title": "This is another Note",
+    "text": "Notice how great this is",
+    "id": "JyxA57iq7"
   },
   {
-    "title": "Jacqueline",
-    "text": "jlkdafjadf"
-  },
-  {
-    "title": "Jacqueline",
-    "text": "jlkdafjadf"
-  },
-  {
-    "title": "fhjakl;jdfa",
-    "text": "lkjdaf;l"
-  },
-  {
-    "title": "Stupid ",
-    "text": "l;kdajf;l"
-  },
-  {
-    "title": "Jac",
-    "text": "a;dlkjf",
-    "id": "NsTioBLFn"
+    "title": "Test Note",
+    "text": "Here We go",
+    "id": "1RJee4jkZ"
   }
 ]

@@ -11,8 +11,8 @@ module.exports = (app) => {
   app.post('/api/notes', (req, res) => {
     // unique id
     req.id = shortid.generate();
-    const newNote = { 
-      title: req.body.title, 
+    const newNote = {
+      title: req.body.title,
       text: req.body.text,
       id: req.id
     };
@@ -25,9 +25,19 @@ module.exports = (app) => {
     res.end();
   });
 
-  // Selected Note Display
-
   // Delete Note   
+
+  app.delete("/api/notes/:id", (req, res) => {
+    // let noteList = require("./db.json");
+    let deleteId = req.params.id;
+    notes.splice(deleteId, 1);
+    let postDelete = JSON.stringify(notes, null, 2)
+
+    fs.writeFile('./db/db.json', postDelete, (err) =>
+    err ? console.log(err) : console.log("Note Successfullly Deleted"));
+    res.end();
+  });
+
 };
 
 
