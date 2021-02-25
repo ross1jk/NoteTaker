@@ -21,10 +21,7 @@ To access this deployed application, visit the following link: [Note Taker](http
 
 ## Usage
 
-Watch the following video for step by step instructions on how to use this application: [Video Tutorial]()
-
-Once Installed, you will run the command node server.js in your terminal. This will establish your connection to your local server/host. You will know if it is successful if you see the following in your terminal:
-
+This application is ran through a server locally on Port 3000:
 ![App Listing on Port](./images/applistening.png)
 
 This application uses html and api routes, which connects the front end to the back end of the application.
@@ -50,7 +47,6 @@ This note taker application presents a user with a landing page and a link to a 
 ![API Routes](./images/apiroutes.png)
 
 All of this is read through the server.js file
-![Server](./images/server.png)
 
 ## Mock-Up
 
@@ -58,7 +54,7 @@ The following image shows a mock-up of the generated HTML’s appearance:
 
 ### Note Taker Home
 
-![Note Taker Main Page](./images/homepage.png)
+![Note Taker Main Page](./images/home.png)
 
 ### Note Taker Note Page
 

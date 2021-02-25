@@ -3,6 +3,7 @@ const notes = require('../db/db.json');
 const fs = require('fs');
 const { finished } = require('stream');
 const shortid = require('shortid');
+const { json } = require('express');
 
 module.exports = (app) => {
 
@@ -28,13 +29,17 @@ module.exports = (app) => {
     let deleteId = req.params.id;
     notes.splice(deleteId, 1);
     let postDelete = JSON.stringify(notes, null, 2)
+    // let deleteId = req.params.id;
+    // for (i = 0; i < req.params.length; i++) {
+    //   if (req.params[i].id === deleteId)
+    //   notes.splice(deleteId, 1);
+    //   return notes; 
+    // }
+    // let postDelete = JSON.stringify(notes, null, 2)
 
     fs.writeFile('./db/db.json', postDelete, (err) =>
-    err ? console.log(err) : console.log("Note Successfully Deleted"));
+      err ? console.log(err) : console.log("Note Successfully Deleted"));
     res.end();
   });
 
 };
-
-
-
